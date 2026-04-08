@@ -49,24 +49,24 @@ EntraTrace is meant to answer:
 ## Project Layout
 
 ```text
-F:\dev\cv_output\entratrace
+<repo-root>
   entratrace.py
   entratrace.ignore.example
   README.md
-  assets\
+  assets/
     entratrace-banner.svg
-  entratrace\
+  entratrace/
     collector_graph.py
     cli.py
     loader.py
     analysis.py
     suppressions.py
     reporting.py
-  public_snapshots\
+  public_snapshots/
     SOURCES.md
-    official_demo_previous\
-    official_demo_current\
-  reports\
+    official_demo_previous/
+    official_demo_current/
+  reports/
 ```
 
 ## Safe Public Demo Data
@@ -83,14 +83,14 @@ That means you get realistic Entra and Azure modeling without pulling data from 
 Run the console-only demo first:
 
 ```powershell
-cd F:\dev\cv_output\entratrace
+cd C:\projects\entratrace
 python .\entratrace.py analyze .\public_snapshots\official_demo_current --previous .\public_snapshots\official_demo_previous --summary-only
 ```
 
 Collect a real snapshot from Microsoft Graph (read-only):
 
 ```powershell
-cd F:\dev\cv_output\entratrace
+cd C:\projects\entratrace
 az login
 python .\entratrace.py collect .\snapshots\tenant-2026-04-08 --audit-days 14 --signin-days 14
 ```
@@ -98,21 +98,21 @@ python .\entratrace.py collect .\snapshots\tenant-2026-04-08 --audit-days 14 --s
 Analyze the collected snapshot:
 
 ```powershell
-cd F:\dev\cv_output\entratrace
+cd C:\projects\entratrace
 python .\entratrace.py analyze .\snapshots\tenant-2026-04-08 --summary-only
 ```
 
 Generate JSON and HTML reports:
 
 ```powershell
-cd F:\dev\cv_output\entratrace
+cd C:\projects\entratrace
 python .\entratrace.py analyze .\public_snapshots\official_demo_current --previous .\public_snapshots\official_demo_previous --json .\reports\official-demo.json --html .\reports\official-demo.html
 ```
 
 Run the new attack-informed scenario packs:
 
 ```powershell
-cd F:\dev\cv_output\entratrace
+cd C:\projects\entratrace
 python .\entratrace.py analyze .\public_snapshots\incident_oauth_chain_current --previous .\public_snapshots\incident_oauth_chain_previous --summary-only
 python .\entratrace.py analyze .\public_snapshots\incident_role_escalation_current --previous .\public_snapshots\incident_role_escalation_previous --summary-only
 ```
@@ -120,7 +120,7 @@ python .\entratrace.py analyze .\public_snapshots\incident_role_escalation_curre
 Baseline and ignore mode (suppress known findings):
 
 ```powershell
-cd F:\dev\cv_output\entratrace
+cd C:\projects\entratrace
 python .\entratrace.py analyze .\public_snapshots\official_demo_current --previous .\public_snapshots\official_demo_previous --json .\reports\baseline.json --html .\reports\baseline.html
 python .\entratrace.py analyze .\public_snapshots\official_demo_current --previous .\public_snapshots\official_demo_previous --baseline .\reports\baseline.json --ignore-file .\entratrace.ignore.example --summary-only --width 78
 ```
@@ -128,7 +128,7 @@ python .\entratrace.py analyze .\public_snapshots\official_demo_current --previo
 Open the HTML report:
 
 ```powershell
-Start-Process 'F:\dev\cv_output\entratrace\reports\official-demo.html'
+Start-Process '.\reports\official-demo.html'
 ```
 
 ## What The Demo Should Show
@@ -167,7 +167,3 @@ The bundled public diff is designed to surface:
 - [AzureHound](https://github.com/SpecterOps/AzureHound)
 - [Stormspotter](https://github.com/Azure/Stormspotter)
 - [ROADrecon](https://github.com/dirkjanm/ROADtools/wiki/Getting-started-with-ROADrecon)
-
-## CV Pitch
-
-Built `EntraTrace`, a defender-first Entra ID and Azure privilege-path analyzer that identifies workload identity risk, app ownership abuse paths, guest exposure, and newly introduced cloud privilege escalation routes across Entra roles, service principals, and Azure RBAC.
