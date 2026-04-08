@@ -1,6 +1,15 @@
 # EntraTrace
 
-![EntraTrace banner](assets/entratrace-banner.svg)
+![Focus](https://img.shields.io/badge/FOCUS-ENTRA%20%2B%20AZURE%20IDENTITY%20DRIFT-374151?style=for-the-badge)
+![Use](https://img.shields.io/badge/USE-DEFENSIVE%20PRIVILEGE--PATH%20ANALYSIS-7F1D1D?style=for-the-badge)
+![Language](https://img.shields.io/badge/LANGUAGE-PYTHON-1D4ED8?style=for-the-badge&logo=python&logoColor=white)
+![Output](https://img.shields.io/badge/OUTPUT-CLI%20%7C%20JSON%20%7C%20HTML-0F766E?style=for-the-badge)
+
+## Example Usage
+
+```powershell
+python .\entratrace.py analyze .\public_snapshots\official_demo_current --previous .\public_snapshots\official_demo_previous --summary-only
+```
 
 `EntraTrace` is a defender-first Microsoft Entra ID and Azure privilege-path analyzer that focuses on `what changed`, `who can reach crown-jewel access`, and `how to break the path`, not just graph exploration.
 
@@ -53,8 +62,6 @@ EntraTrace is meant to answer:
   entratrace.py
   entratrace.ignore.example
   README.md
-  assets/
-    entratrace-banner.svg
   entratrace/
     collector_graph.py
     cli.py
