@@ -1,0 +1,16 @@
+# EntraTrace ignore rules example
+# Format:
+#   key:value
+# Supported keys:
+#   id, severity, category, title, path, attack, all
+#
+# Examples:
+# severity:low
+# category:oauth_abuse
+# attack:T1078.004
+# title:guest identity owns
+# path:Contoso Key Vault Operations
+# id:audit-new-sp-cred::sp-keyvault-ops::2026-01-27T15:29:42Z
+
+# Ignore all low-severity findings:
+severity:low
