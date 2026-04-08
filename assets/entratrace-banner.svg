@@ -1,17 +1,32 @@
 <svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#060B14"/>
-      <stop offset="1" stop-color="#0F1B2E"/>
+      <stop stop-color="#040611"/>
+      <stop offset="1" stop-color="#0B1530"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A855F7"/>
     </linearGradient>
   </defs>
+
   <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
-  <rect x="42" y="38" width="1196" height="284" rx="18" fill="#091224" stroke="#2DD4BF" stroke-opacity="0.35"/>
-  <text x="72" y="86" fill="#7DD3FC" font-family="Consolas, Menlo, monospace" font-size="18">ENTRATRACE // DEFENDER-FIRST IDENTITY ABUSE-PATH ANALYSIS</text>
-  <text x="72" y="128" fill="#E2E8F0" font-family="Consolas, Menlo, monospace" font-size="20">  ______       __              ______</text>
-  <text x="72" y="155" fill="#E2E8F0" font-family="Consolas, Menlo, monospace" font-size="20"> / ____/___   / /________ _   /_  __/________ _________</text>
-  <text x="72" y="182" fill="#E2E8F0" font-family="Consolas, Menlo, monospace" font-size="20">/ __/ / __ \ / __/ ___/ _ `/    / / / ___/ __ `/ ___/ _ \</text>
-  <text x="72" y="209" fill="#E2E8F0" font-family="Consolas, Menlo, monospace" font-size="20">/ /___/ / / // /_/ /  / (_| /   / / / /  / /_/ / /__/  __/</text>
-  <text x="72" y="236" fill="#E2E8F0" font-family="Consolas, Menlo, monospace" font-size="20">\____/_/ /_/ \__/_/   \__,_/   /_/ /_/   \__,_/\___/\___/</text>
-  <text x="72" y="286" fill="#94A3B8" font-family="Consolas, Menlo, monospace" font-size="18">Track drift. Prioritize risky identities. Break privilege paths fast.</text>
+  <rect x="28" y="24" width="1224" height="312" rx="18" fill="#050915" stroke="#1E2A45"/>
+
+  <circle cx="62" cy="52" r="7" fill="#FF5F56"/>
+  <circle cx="86" cy="52" r="7" fill="#FFBD2E"/>
+  <circle cx="110" cy="52" r="7" fill="#27C93F"/>
+
+  <text x="136" y="58" fill="#8FA5C7" font-family="Consolas, Menlo, monospace" font-size="15">entratrace -- cyberpunk defender workflow</text>
+
+  <text x="70" y="95" fill="#7DD3FC" font-family="Consolas, Menlo, monospace" font-size="19">$ entratrace analyze current --previous previous --summary-only</text>
+
+  <text x="70" y="130" fill="#D6E0F0" font-family="Consolas, Menlo, monospace" font-size="18">███████ ███    ██ ████████ ██████   █████  ████████ ██████   █████   ██████ ███████</text>
+  <text x="70" y="154" fill="#D6E0F0" font-family="Consolas, Menlo, monospace" font-size="18">██      ████   ██    ██    ██   ██ ██   ██    ██    ██   ██ ██   ██ ██      ██</text>
+  <text x="70" y="178" fill="#D6E0F0" font-family="Consolas, Menlo, monospace" font-size="18">█████   ██ ██  ██    ██    ██████  ███████    ██    ██████  ███████ ██      █████</text>
+  <text x="70" y="202" fill="#D6E0F0" font-family="Consolas, Menlo, monospace" font-size="18">██      ██  ██ ██    ██    ██   ██ ██   ██    ██    ██   ██ ██   ██ ██      ██</text>
+  <text x="70" y="226" fill="#D6E0F0" font-family="Consolas, Menlo, monospace" font-size="18">███████ ██   ████    ██    ██   ██ ██   ██    ██    ██   ██ ██   ██  ██████ ███████</text>
+
+  <text x="70" y="270" fill="#9CC4FF" font-family="Consolas, Menlo, monospace" font-size="16">[+] detect path drift   [+] rank risky identities   [+] break abuse chains fast</text>
+  <text x="70" y="300" fill="url(#glow)" font-family="Consolas, Menlo, monospace" font-size="15">focus: app ownership abuse | oauth consent chains | workload identity blast radius</text>
 </svg>
