@@ -1,4 +1,4 @@
-![banner](et-banner.png)
+![banner](/assets/et-banner.png)
 
 # EntraTrace
 
