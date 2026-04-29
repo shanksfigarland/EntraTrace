@@ -1,3 +1,5 @@
+![banner](et-banner.png)
+
 # EntraTrace
 
 ![Focus](https://img.shields.io/badge/FOCUS-ENTRA%20%2B%20AZURE%20IDENTITY%20DRIFT-374151?style=for-the-badge)
